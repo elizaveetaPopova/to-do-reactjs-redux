@@ -4,7 +4,7 @@ import rootReducer from './slices'
 import { useDispatch, useSelector, type TypedUseSelectorHook } from "react-redux";
 
 const store = configureStore({
-    reducer: rootReducer
+  reducer: rootReducer
 })
 
 export type RootState = ReturnType<typeof store.getState>
