@@ -30,7 +30,7 @@ export const fetchTasks = createAsyncThunk(
     }
 )
 
-const tasksSlise = createSlice({
+const tasksSlice = createSlice({
     name: 'tasks',
     initialState,
     reducers: {
@@ -54,5 +54,5 @@ const tasksSlise = createSlice({
     })
 })
 
-export const { deleteTask } = tasksSlise.actions
-export default tasksSlise.reducer
+export const { deleteTask } = tasksSlice.actions
+export default tasksSlice.reducer
